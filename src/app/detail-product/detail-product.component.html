@@ -1,0 +1,20 @@
+<h3 style="padding-top: 45px; padding-bottom: 10px;">Chi tiết sản phẩm</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <img [src]="product.img" width="330px" height="380px">
+        </div>
+        <div class="col-6">
+            <h4 style="color: rgb(177, 103, 34);">{{ product.title }}</h4> <hr>
+            <label for=""><b>price: </b></label> <br>
+            {{ product.price }}.000 vnđ <hr>
+            <label for=""><b>desc: </b></label> <br>
+            {{ product.desc }}<hr>
+            <label for=""><b>author: </b></label> <br>
+            {{ product.author }}<hr>
+            <div style="text-align: center">
+                <button type="button" class="btn btn-secondary" routerLink="/product">ADD TO CARD</button>
+            </div>
+        </div>
+    </div>
+</div>
